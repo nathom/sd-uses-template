@@ -2,11 +2,3 @@ jobs:
     main:
         requires: [~pr, ~commit]
         template: nodejs/test@2.0.1
-    other_use_template:
-        requires: [main]
-        steps:
-            - one: "echo 1"
-    other_no_template:
-        requires: [other_use_template]
-        steps:
-            - one: "echo 1"
